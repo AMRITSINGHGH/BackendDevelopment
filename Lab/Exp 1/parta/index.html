@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Comprehensive Showcase - Experiment 1">
+    <title>HTML5 All Elements Showcase</title>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>HTML5 Elements Showcase</h1>
+        <p>Demonstrating Semantic Tags, Forms, Multimedia, and Graphics</p>
+        <nav>
+            <ul>
+                <li><a href="#semantics">Semantics</a></li>
+                <li><a href="#media">Multimedia</a></li>
+                <li><a href="#form">Forms</a></li>
+                <li><a href="#graphics">Graphics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Section 1: Semantic Structure & Formatting -->
+        <section id="semantics">
+            <h2>1. Semantic & Text Formatting Elements</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>
+                    This is standard paragraph text with <strong>strong emphasis</strong>, 
+                    <em>italicized text</em>, <mark>highlighted content</mark>, and <del>deleted text</del> <ins>inserted text</ins>.
+                </p>
+                <blockquote cite="https://developer.mozilla.org">
+                    "HTML5 introduces semantic elements to describe content meaningfully."
+                </blockquote>
+                <figure>
+                    <figcaption>Sample SVG Icon Representation</figcaption>
+                </figure>
+            </article>
+
+            <aside>
+                <h4>Sidebar Info</h4>
+                <p>This section uses the <code>&lt;aside&gt;</code> tag for related context.</p>
+            </aside>
+        </section>
+
+        <hr>
+
+        <!-- Section 2: Multimedia Elements -->
+        <section id="media">
+            <h2>2. Multimedia Elements</h2>
+            
+            <h3>Audio Element</h3>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Element</h3>
+            <video controls width="320" height="240">
+                <source src="sample.mp4" type="video/mp4">
+                <track kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <hr>
+
+        <!-- Section 3: HTML5 Form Inputs & Attributes -->
+        <section id="form">
+            <h2>3. HTML5 Form & Input Types</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>User Details & HTML5 Inputs</legend>
+
+                    <label for="username">Text Input (Required):</label><br>
+                    <input type="text" id="username" name="username" placeholder="John Doe" required><br><br>
+
+                    <label for="email">Email Input:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
+                    <label for="age">Number Input (Min/Max):</label><br>
+                    <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+                    <label for="dob">Date Input:</label><br>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="favcolor">Color Picker:</label><br>
+                    <input type="color" id="favcolor" name="favcolor" value="#3498db"><br><br>
+
+                    <label for="volume">Range Input:</label><br>
+                    <input type="range" id="volume" name="volume" min="0" max="100"><br><br>
+
+                    <label for="browser">Datalist Input:</label><br>
+                    <input list="browsers" id="browser" name="browser" placeholder="Select or type browser...">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Brave">
+                        <option value="Edge">
+                        <option value="Safari">
+                    </datalist><br><br>
+
+                    <label for="progress">Progress Bar:</label><br>
+                    <progress id="progress" value="70" max="100">70%</progress><br><br>
+
+                    <button type="submit">Submit Form</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Section 4: Graphics & Interactive Elements -->
+        <section id="graphics">
+            <h2>4. Graphics & Interactive Elements</h2>
+
+            <h3>Inline SVG</h3>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="navy" stroke-width="3" fill="skyblue" />
+            </svg>
+
+            <h3>Canvas Element</h3>
+            <canvas id="myCanvas" width="200" height="80" style="border:1px solid #000000;"></canvas>
+            <script>
+                const c = document.getElementById("myCanvas");
+                const ctx = c.getContext("2d");
+                ctx.font = "16px Arial";
+                ctx.fillText("HTML5 Canvas", 40, 45);
+            </script>
+
+            <h3>Interactive Details Tag</h3>
+            <details>
+                <summary>Click to expand/collapse</summary>
+                <p>This content is toggled using native HTML5 <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags without JavaScript.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Experiment 1 | Built with HTML5</p>
+    </footer>
+
+</body>
+</html>
