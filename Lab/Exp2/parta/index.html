@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2: Cascading Style Sheets Showcase</title>
+
+    <!-- 1. External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 2. Internal CSS -->
+    <style>
+        /* Internal CSS rules */
+        .internal-style-banner {
+            background-color: #8e44ad;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        /* Specificity Example: Class vs Element */
+        p.highlight {
+            color: #d35400;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-heading">Experiment 2: All CSS Types & Layouts</h1>
+        <p>Demonstrating Inline, Internal, and External CSS</p>
+    </header>
+
+    <!-- Internal CSS Banner -->
+    <div class="internal-style-banner">
+        <h2>This section is styled using Internal CSS (&lt;style&gt; tag)</h2>
+    </div>
+
+    <!-- 3. Inline CSS Demonstration -->
+    <section class="box-model-demo">
+        <h2>1. Three Types of CSS & Box Model</h2>
+        <p style="color: #27ae60; font-size: 1.1rem; font-style: italic;">
+            <strong>Inline CSS:</strong> This sentence is styled directly with an inline <code>style="..."</code> attribute.
+        </p>
+        <p class="highlight">
+            <strong>Internal/External CSS:</strong> This text demonstrates class selectors and Box Model properties (margin, border, padding, content).
+        </p>
+    </section>
+
+    <!-- Flexbox Layout -->
+    <section class="box-model-demo">
+        <h2>2. CSS Flexbox Layout & Transitions</h2>
+        <p>Hover over these cards to test CSS transitions:</p>
+        <div class="flex-container">
+            <div class="flex-card">Flex Item 1</div>
+            <div class="flex-card">Flex Item 2</div>
+            <div class="flex-card">Flex Item 3</div>
+        </div>
+    </section>
+
+    <!-- Grid Layout -->
+    <section class="box-model-demo">
+        <h2>3. CSS Grid Layout</h2>
+        <div class="grid-container">
+            <div class="grid-item">Grid Area 1</div>
+            <div class="grid-item">Grid Area 2</div>
+            <div class="grid-item">Grid Area 3</div>
+            <div class="grid-item">Grid Area 4</div>
+        </div>
+    </section>
+
+    <!-- Keyframe Animation -->
+    <section class="box-model-demo">
+        <h2>4. CSS Keyframe Animation</h2>
+        <p style="text-align: center;">Continuous keyframe pulse animation:</p>
+        <div class="animated-box"></div>
+    </section>
+
+</body>
+</html>

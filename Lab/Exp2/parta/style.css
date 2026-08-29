@@ -1,0 +1,120 @@
+/* Universal Box Sizing & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body Styling (Element Selector & Inheritance) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* ID Selector Demonstration */
+#main-heading {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/* Class Selector & CSS Box Model */
+.box-model-demo {
+    background-color: #ffffff;
+    border: 3px solid #3498db;  /* Border */
+    padding: 20px;               /* Padding */
+    margin: 20px 0;              /* Margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Flexbox Layout Section */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.flex-card {
+    background-color: #e8f4f8;
+    border: 1px solid #bce8f1;
+    padding: 15px;
+    flex: 1 1 200px;
+    border-radius: 6px;
+    text-align: center;
+    /* CSS Transition Demonstration */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Pseudo-class Selector */
+.flex-card:hover {
+    transform: translateY(-5px);
+    background-color: #d1ecf1;
+}
+
+/* CSS Grid Layout Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.grid-item {
+    background-color: #27ae60;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CSS Keyframe Animation Demonstration */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    margin: 20px auto;
+    border-radius: 8px;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #e74c3c;
+    }
+    100% {
+        transform: scale(1.15);
+        background-color: #f39c12;
+    }
+}
+
+/* Responsive Design Principles via Media Queries */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #main-heading {
+        font-size: 1.5rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
