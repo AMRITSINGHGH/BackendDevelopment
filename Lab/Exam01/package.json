@@ -1,0 +1,21 @@
+{
+  "name": "exam01",
+  "version": "1.0.0",
+  "description": "Exam01 notes application using Express, EJS and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "check-db": "node check-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  }
+}
